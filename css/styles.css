@@ -27,7 +27,7 @@ header  h1 {
 } */
 
 .score-board {
-    margin: 50px auto;
+    margin: 30px auto;
     border: 3px solid white;
     border-radius: 4px;
     text-align: center;
@@ -59,8 +59,20 @@ header  h1 {
     right: -50px;
 }
 
+.user-compu-choice {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-compu-choice h2 {
+    display: inline-block;
+    margin: 20px;
+    font-family: Asap, sans-serif;
+    font-size: 24px;
+}
+
 .result {
-    font-size: 40px;
+    font-size: 26px;
     color: white;
 }
 
