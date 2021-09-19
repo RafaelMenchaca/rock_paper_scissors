@@ -14,7 +14,8 @@ let result;
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id;
     // userChoiceDisplay.innerHTML = userChoice;
-    generateComputerChoice()
+    // generateComputerChoice()
+    imposible()
     getResult()
     gameOver(userScore, computerScore);
     imagenUserChoice();
@@ -38,7 +39,7 @@ function generateComputerChoice() {
 
 function imagenUserChoice(){
     if(userChoice === 'rock' ){
-        userChoiceDisplay.innerHTML = `<img id="rock" src="https://res.cloudinary.com/dxw0z7q5k/image/upload/v1632018430/piedra-col_zjoavn.png" alt="Rock">`;
+        userChoiceDisplay.innerHTML = `<img id="rock" src="https://res.cloudinary.com/dxw0z7q5k/image/upload/v1632022616/piedra-col_o7lras.png" alt="Rock">`;
     }
     if(userChoice === 'paper'){
         userChoiceDisplay.innerHTML = `<img id="paper" src="https://res.cloudinary.com/dxw0z7q5k/image/upload/v1632018430/papel-col_fwhtsc.png" alt="Paper">`
@@ -49,7 +50,7 @@ function imagenUserChoice(){
 }
 function imagenComputerChoice(){
     if(computerChoice === 'rock' ){
-        compuChoiceDisplay.innerHTML = `<img id="rock" src="https://res.cloudinary.com/dxw0z7q5k/image/upload/v1632018430/piedra-col_zjoavn.png" alt="Rock">`;
+        compuChoiceDisplay.innerHTML = `<img id="rock" src="https://res.cloudinary.com/dxw0z7q5k/image/upload/v1632022616/piedra-col_o7lras.png" alt="Rock">`;
     }
     if(computerChoice === 'paper'){
         compuChoiceDisplay.innerHTML = `<img id="paper" src="https://res.cloudinary.com/dxw0z7q5k/image/upload/v1632018430/papel-col_fwhtsc.png" alt="Paper">`
@@ -116,6 +117,18 @@ function gameOver(user, compu){
         userScore_span.innerHTML = 0;
         computerScore_span.innerHTML = 0;
         resultDisplay.innerHTML = "";
+    }
+}
+
+function imposible(){
+    if(userChoice === 'rock' ){
+        computerChoice = 'paper';
+    }
+    if(userChoice === 'paper'){
+        computerChoice = 'scissors';
+    }
+    if(userChoice === 'scissors'){
+        computerChoice = 'rock';
     }
 }
 
