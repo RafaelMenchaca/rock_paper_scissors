@@ -110,6 +110,10 @@ function gameOver(user, compu){
         userScore_span.innerHTML = 0;
         computerScore_span.innerHTML = 0;
         resultDisplay.innerHTML = "";
+        compuChoiceDisplay.innerHTML = "";
+        userChoiceDisplay.innerHTML = "";
+        computerChoice = "";
+        userChoice = "";
     } else if ( compu === 5 && compu > user){
         alert("Game Over You Lose!");
         userScore = 0;
@@ -117,6 +121,10 @@ function gameOver(user, compu){
         userScore_span.innerHTML = 0;
         computerScore_span.innerHTML = 0;
         resultDisplay.innerHTML = "";
+        compuChoiceDisplay.innerHTML = "";
+        userChoiceDisplay.innerHTML = "";
+        computerChoice = "";
+        userChoice = "";
     }
 }
 
