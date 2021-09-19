@@ -14,9 +14,9 @@ let result;
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id;
     // userChoiceDisplay.innerHTML = userChoice;
-    // generateComputerChoice()
-    imposible()
-    getResult()
+    generateComputerChoice();
+    // imposible();
+    getResult();
     gameOver(userScore, computerScore);
     imagenUserChoice();
     imagenComputerChoice();
