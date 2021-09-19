@@ -6,6 +6,9 @@ This is a basic project in Javascript and basics HTML / CSS a game against the c
 
 ## Knowledge elements
 
- - [Java Script](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [HTML](https://github.com/matiassingers/awesome-readme)
- - [CSS](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ - Java Script
+ - HTML
+ - CSS
+
+ ## Live Preview
+ - https://rafaelmenchaca.github.io/rock_paper_scissors/
